@@ -74,6 +74,7 @@ nav ul {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
+  gap: 4.8rem;
 }
 
 .hero .img-container {
@@ -81,7 +82,7 @@ nav ul {
 }
 
 .hero img {
-  height: 50rem;
+  width: 100%;
   border-radius: 2.4rem;
   box-shadow: 0 1.4rem 2.4rem rgba(0, 0, 0, 0.24);
   animation: pop_up 0.3s ease-in-out;
@@ -92,7 +93,7 @@ nav ul {
 }
 
 .hero .text-side .title {
-  font-size: 6rem;
+  font-size: 6.2rem;
 }
 
 .hero .text-side .title-text {
@@ -143,6 +144,7 @@ nav ul {
 }
 
 .about-us__img-container img {
+  width: 100%;
   max-width: 665px;
   border-radius: 2.4rem;
 }
@@ -165,7 +167,7 @@ nav ul {
 }
 
 .about-us .horizontal {
-  width: 100%;
+  width: 95%;
   height: 1px;
   background-color: var(--black-color);
   opacity: 0.2;
@@ -173,6 +175,7 @@ nav ul {
   position: absolute;
   z-index: -1;
   scale: 1.1 1;
+  transform-origin: center;
 
   animation: horizontal-spreading 0.3s ease-in-out;
 }
@@ -202,20 +205,21 @@ nav ul {
 
 .about-us .vertical {
   width: 1px;
-  height: 100%;
+  height: 90%;
   background-color: var(--black-color);
   opacity: 0.2;
 
   position: absolute;
-  top: 0;
+  top: 8%;
 
   scale: 1 1.1;
+  transform-origin: center;
 
   animation: vertical-spreading 0.3s ease-in-out;
 }
 
 .about-us .left.vertical {
-  left: 0;
+  left: 1%;
 }
 
 /* ________ */
@@ -504,6 +508,40 @@ nav ul {
 }
 
 /* ____ */
+@media (max-width: 1330px) {
+  .hero .text-side .title {
+    font-size: 4.4rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-us__split--screen {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+    text-align: center;
+  }
+
+  .about-us__img-container {
+    grid-area: 2;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero .hero-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .about-us__text-side {
+    padding: 0;
+  }
+
+  .products {
+    padding: 4.4rem;
+  }
+}
 
 @media (max-width: 84em) {
   .gallery {
