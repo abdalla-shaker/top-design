@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --white-color: #eee;
+  --black-color: #333;
+  --gray-color: #ccc;
+  --blue-color: #4763eb;
+  --dark-blue-color: #322797;
+  --button-color: #ad1a1a;
+  --hover-button-color: #9e1212;
+}
+
+html {
+  font-size: 62.5%;
+  direction: rtl;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+.container {
+  width: 95%;
+  max-width: 1560px;
+  margin: 0 auto;
+}
+
+/* _________ */
+
+/* FLEX */
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.items-center {
+  align-items: center;
+}
+
+/* ____ */
+
+/* BUTTON */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  border: unset;
+  outline: unset;
+  padding: 1.6rem 3.2rem;
+  border-radius: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--button-color);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 0.3rem 1.6rem rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: var(--hover-button-color);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.25);
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.3rem 1.6rem rgba(0, 0, 0, 0.25);
+}
+
+.secondary-btn {
+  padding: 1rem 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--black-color);
+  background-color: transparent;
+  border: unset;
+  outline: unset;
+
+  cursor: pointer;
+
+  position: relative;
+  z-index: 0;
+}
+
+.secondary-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  translate: 0 90%;
+
+  height: 30%;
+  width: 20%;
+  z-index: -1;
+  isolation: isolate;
+
+  background-color: var(--white-color);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.secondary-btn:hover::before {
+  width: 100%;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--blue-color);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+
+@media (max-width: 44em) {
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+}
+@media (max-width: 75em) {
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+}
+
+/* ______ */
