@@ -308,3 +308,22 @@ body:has(#nav-icon.open) {
   left: 50%;
   translate: -50% -50%;
 }
+
+.whatsapp_FLOAT {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+
+  z-index: 30;
+}
+
+.whatsapp_FLOAT .whatsapp-icon {
+  width: 40px;
+  height: 40px;
+  color: green;
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp_FLOAT .whatsapp-icon:hover {
+  translate: 0 -3px;
+}
