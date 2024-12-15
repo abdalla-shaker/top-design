@@ -540,6 +540,10 @@ nav ul {
     text-align: center;
   }
 
+  #nav-icon {
+    display: block;
+  }
+
   .header-container nav {
     position: fixed;
     z-index: 11;

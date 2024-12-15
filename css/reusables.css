@@ -177,6 +177,7 @@ body:has(#nav-icon.open) {
   transition: 0.5s ease-in-out;
   cursor: pointer;
   z-index: 12;
+  display: none;
 }
 
 #nav-icon span {
