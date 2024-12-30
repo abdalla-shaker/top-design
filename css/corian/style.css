@@ -1,0 +1,359 @@
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  width: 95%;
+  max-width: 1560px;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  z-index: 1;
+}
+
+.header-container .links a:link,
+.header-container .links a:visited {
+  color: var(--white-color);
+}
+
+.header-container .links a::before {
+  background-color: var(--white-color);
+}
+
+.header-container .links ul li a {
+  color: var(--black-color) !important;
+}
+
+.header-container .links ul li a::before {
+  background-color: var(--black-color);
+}
+
+/* ******************* */
+/* HERO section */
+/* ******************* */
+
+.hero {
+  height: 75vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../../images/products-corian.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 12.8rem;
+  gap: 3.2rem;
+}
+
+.hero h1 {
+  color: var(--white-color);
+  font-size: 7.4rem;
+}
+
+.hero a:link,
+.hero a:visited {
+  background-color: #fff;
+  color: var(--black-color);
+
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.hero a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1.2rem 2.4rem rgba(0, 0, 0, 0.25);
+}
+
+.hero a:active {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 1.6rem rgba(0, 0, 0, 0.25);
+}
+
+.hero .hero-icon {
+  font-size: 4.8rem;
+}
+
+/* ******************* */
+/* FEATURES section */
+/* ******************* */
+
+.features {
+  max-width: 120rem;
+  margin: 9.6rem auto 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4.8rem;
+}
+
+.features img {
+  justify-self: end;
+  border-radius: 2rem;
+}
+
+.features--header {
+  font-size: 1.6rem;
+  color: var(--button-color);
+}
+
+.line {
+  display: inline-block;
+  width: 35rem;
+  height: 2px;
+  background-color: var(--blue-color);
+}
+
+.features--list {
+  font-size: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* ******************* */
+/* ABOUT section */
+/* ******************* */
+
+.about-corian {
+  max-width: 115rem;
+  margin: 9.8rem auto 0;
+  padding: 3.2rem;
+  box-shadow: 0 1.6rem 3.2rem rgba(0, 0, 0, 0.25);
+  border-radius: 5rem;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  column-gap: 1.6rem;
+  row-gap: 2.4rem;
+}
+
+.about-corian--text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
+.about-corian--text-box--title {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--button-color);
+}
+
+.about-corian--text-box--sub-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.about-corian--text-box--description {
+  font-size: 1.6rem;
+  line-height: 175%;
+}
+
+/* ******************* */
+/* CORIAN_PRODUCTS section */
+/* ******************* */
+
+.corian-products,
+.scemar {
+  max-width: 100rem;
+  margin: 9.8rem auto;
+}
+
+.corian-products--header,
+.scemar--header {
+  text-align: center;
+  font-size: 3.6rem;
+  margin-bottom: 4.8rem;
+}
+
+.corian-products--list,
+.scemar--list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 4.8rem;
+  row-gap: 6.4rem;
+
+  list-style: none;
+}
+
+.corian-products--list-item,
+.scemar--list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.corian-products--list-item h3,
+.scemar--list-item h3 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.6rem;
+  padding: 0 3.2rem;
+}
+
+.corian-products--list-item .images-container,
+.scemar--list-item .images-container {
+  /* margin-top: auto; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1.2rem;
+  row-gap: 1.2rem;
+}
+
+.corian-products--list-item .images-container .img-container,
+.scemar--list-item .images-container .img-container {
+  overflow: hidden;
+}
+
+.corian-products--list-item .images-container img,
+.scemar--list-item .images-container img {
+  width: 100%;
+  height: 113px;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.corian-products--list-item .images-container img:hover,
+.scemar--list-item .images-container img:hover {
+  scale: 1.2;
+}
+
+.scemar {
+  padding-top: 9.8rem;
+}
+
+.scemar--list-item.small .images-container {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.scemar--list-item .images-container img {
+  max-width: 150px;
+  height: auto;
+  border: 1px solid black;
+}
+
+.special-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+/* *********************** */
+/* *********************** */
+/* MEDIA QUERIES */
+/* *********************** */
+/* *********************** */
+
+@media (max-width: 75em) {
+  .about-corian {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-corian--text-box {
+    text-align: center;
+    max-width: 50rem;
+  }
+
+  .about-corian .first {
+    grid-row: 2;
+  }
+
+  .about-corian .third {
+    grid-row: 6;
+  }
+
+  .about-corian .fifth {
+    grid-row: 10;
+  }
+}
+
+@media (max-width: 65em) {
+  .corian-products--list,
+  .scemar--list {
+    grid-template-columns: 1fr;
+    padding: 0 1.2rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    padding: 0 4.8rem;
+  }
+
+  .features img {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 62.5em) {
+  .header-container nav {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: -110%;
+  }
+
+  nav:has(+ #nav-icon.open) {
+    left: -2.6%;
+  }
+
+  .header-container .links a:link,
+  .header-container .links a:visited {
+    color: var(--black-color);
+  }
+
+  .header-container .links a::before {
+    background-color: var(--black-color);
+  }
+
+  .footer-information {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 40em) {
+  .corian-products--list-item .images-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-address {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .address {
+    margin-bottom: 3.2rem;
+  }
+
+  .social-media-links {
+    justify-content: center;
+    margin-top: 2.4rem;
+  }
+}
+
+/*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+*/
