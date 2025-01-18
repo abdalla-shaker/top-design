@@ -6,3 +6,14 @@
 .features-img {
   object-fit: cover;
 }
+
+.availability {
+  max-width: 122rem;
+  margin: 9.6rem auto 0;
+}
+
+.availability-header {
+  font-size: 2rem;
+  color: var(--button-color);
+  width: 50%;
+}
