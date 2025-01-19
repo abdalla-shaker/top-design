@@ -3,7 +3,7 @@
     url(../../images/products-compact.png);
 }
 
-.features img {
+.features > img {
   width: 100%;
 }
 
@@ -12,7 +12,7 @@
   --width: 100px;
   --quantity: 11;
 
-  width: 95%;
+  width: 100%;
   max-width: 1560px;
   height: var(--height);
   margin: 9.6rem auto 0;
