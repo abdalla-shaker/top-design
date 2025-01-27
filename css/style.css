@@ -471,8 +471,3 @@ FONT SIZE SYSTEM (px)
     gap: 1.2rem;
   }
 }
-
-.lightbox .lb-image {
-  min-width: 50rem !important;
-  min-height: 50rem !important;
-}
