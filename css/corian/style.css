@@ -213,6 +213,10 @@ body {
   row-gap: 1.2rem;
 }
 
+.corian-products--list-item .images-container a {
+  cursor: zoom-in;
+}
+
 .corian-products--list-item .images-container .img-container,
 .scemar--list-item .images-container .img-container {
   overflow: hidden;
@@ -357,3 +361,7 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+
+.lightbox {
+  cursor: zoom-out;
+}
