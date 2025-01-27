@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/reusables.css" />
     <link rel="stylesheet" href="css/corian/style.css" />
     <link rel="stylesheet" href="css/compact/style.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
   </head>
   <body>
     <header class="header">
@@ -19,14 +20,16 @@
         <nav>
           <ul class="links flex items-center">
             <li><a href="index.html">توب ديزاين</a></li>
-            <li><a href="#hero">من نحن</a></li>
+            <li><a href="about.html">من نحن</a></li>
             <li class="collapsable-els-cont">
               <a href="corian.html">الكوريان</a>
               <ul>
-                <li><a href="#">الكوريان الرخام الصناعى</a></li>
-                <li><a href="#">منتجات الكوريان</a></li>
-                <li><a href="#">عينات الكوريان</a></li>
-                <li><a href="#">معلومات عن الكوريان</a></li>
+                <li>
+                  <a href="corian.html#features">الكوريان الرخام الصناعى</a>
+                </li>
+                <li><a href="corian.html#products">منتجات الكوريان</a></li>
+                <li><a href="corian.html#scemar">عينات الكوريان</a></li>
+                <li><a href="corian.html#about">معلومات عن الكوريان</a></li>
               </ul>
             </li>
             <li>
@@ -150,6 +153,94 @@
       />
     </section>
 
+    <section class="features" id="features">
+      <img
+        src="images/compact/about2.png"
+        alt="A counter image"
+        class="features-img"
+        width="376px"
+        height="500px"
+      />
+
+      <div class="features--text-box">
+        <h2 class="features--header">[استخدامات الكومباكت HPL]</h2>
+        <div class="line"></div>
+        <div class="features--list">
+          <ul>
+            <li>قواطيع وفواصل الحمامات.</li>
+            <li>مباول الحمامات.</li>
+            <li>ابواب الحمامات.</li>
+            <li>الترابيزات.</li>
+            <li>اللوكرز.</li>
+          </ul>
+          <ul>
+            <li>تجاليد الحوائط.</li>
+            <li>المطابخ.</li>
+            <li>وحدات الحمام.</li>
+            <li>غرف تغيير الملابس.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="accessories flex justify-center items-center">
+      <div class="accessories-container flex column">
+        <h2>إكسسوارات كومباكت HPL استانلس 304 لقواطيع وابواب الحمامات</h2>
+
+        <div class="content flex column">
+          <p>
+            تعتبر شركة توب لاين من اكبر الشركات المستوردة لاكسسوارات الكومباكت 
+            الاستانلس 304 فتقوم الشركة باستيراد اجود انواع الاستانلس 304 صينى
+            المنشأ انتاج مصنع اكس دى اف
+          </p>
+
+          <div class="accessories-features flex justify-center">
+            <h3>مميزات الاكسسوارات الاستانلس 304</h3>
+
+            <ul>
+              <li>اكسسوارات لا تتاثر بالماء نهائياً</li>
+              <li>مقاومة لعوامل الجو ودرجات الحرارة</li>
+              <li>تميزها بالمتنانه وتحمل الضغط</li>
+              <li>متاح ايضاً اكسسوارات استانلس مصرى بأجود الخامات</li>
+            </ul>
+          </div>
+
+          <div class="accessories-images flex justify-center">
+            <a href="./images/compact/lightbox1.png" data-lightbox="roadtrip">
+              <img src="./images/compact/access1.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox2.png" data-lightbox="roadtrip">
+              <img src="./images/compact/access2.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox3.png" data-lightbox="roadtrip">
+              <img src="./images/compact/access3.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox4.png" data-lightbox="roadtrip">
+              <img src="./images/compact/access4.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox5.png"" data-lightbox="roadtrip">
+              <img src="./images/compact/access5.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox6.png"" data-lightbox="roadtrip">
+              <img src="./images/compact/access6.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox7.png"" data-lightbox="roadtrip">
+              <img src="./images/compact/access7.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox8.png"" data-lightbox="roadtrip">
+              <img src="./images/compact/access8.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox9.png"" data-lightbox="roadtrip">
+              <img src="./images/compact/access9.png" alt="Accessories" />
+            </a>
+            <a href="./images/compact/lightbox10.png"" data-lightbox="roadtrip">
+              <img src="./images/compact/access10.png" alt="Accessories" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container footer-information">
         <h2 class="footer-title">
@@ -244,5 +335,8 @@
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
+    <script src="scripts/lightbox-plus-jquery.js"></script>
   </body>
 </html>
+
+<!-- ! DON'T FORGET TO ADD THE NAMES -->

@@ -52,3 +52,65 @@
 .logos-slide:hover .logo-slide {
   animation-play-state: paused !important;
 }
+
+/* Accessories Section */
+section.accessories {
+  padding: 4rem;
+  background-color: var(--dark-blue-color);
+  color: var(--white-color);
+}
+
+.accessories-container {
+  max-width: 120rem;
+  gap: 2.4rem;
+}
+
+.accessories-container h2 {
+  font-size: 4.4rem;
+  text-align: center;
+  line-height: 170%;
+  font-weight: 900;
+}
+
+.accessories-container .content {
+  gap: 4.8rem;
+}
+
+.accessories-container .content p,
+.accessories-container .content .accessories-features ul li {
+  font-size: 2rem;
+}
+
+.accessories-container .content .accessories-features h3 {
+  font-size: 2.6rem;
+}
+
+.accessories-container .content .accessories-features ul {
+  margin-right: 6.4rem;
+}
+
+.accessories-container .content p {
+  text-align: center;
+}
+
+.accessories-container .content .accessories-features {
+  gap: 1.6rem;
+}
+
+.accessories-container .content .accessories-images {
+  flex-wrap: wrap;
+  gap: 3.2rem;
+}
+
+.accessories-container .content .accessories-images img {
+  cursor: zoom-in;
+}
+
+.lightbox .lb-image {
+  min-width: 60rem !important;
+  min-height: 60rem !important;
+}
+
+.lightbox {
+  cursor: zoom-out;
+}

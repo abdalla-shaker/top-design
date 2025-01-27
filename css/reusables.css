@@ -62,6 +62,10 @@ body:has(#nav-icon.open) {
   align-items: center;
 }
 
+.column {
+  flex-direction: column;
+}
+
 .grid {
   display: grid;
   gap: 2.4rem;
