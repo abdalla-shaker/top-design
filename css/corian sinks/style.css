@@ -17,3 +17,11 @@
   color: var(--button-color);
   width: 50%;
 }
+
+/* !Responsive */
+
+/* @media (max-width: 370px) {
+  .logo-cont img {
+    height: 6rem;
+  }
+} */

@@ -403,6 +403,28 @@ nav ul {
   scale: 1 1;
 }
 
+footer {
+  position: relative;
+}
+
+.developers {
+  position: absolute;
+  left: 0;
+  bottom: 1.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.developers p {
+  font-size: 1.8rem;
+}
+
+.developers a {
+  color: var(--button-color);
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .header-container .links ul {
   position: absolute;
   padding: 1.6rem 3.2rem;
