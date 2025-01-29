@@ -168,6 +168,21 @@ section.accessories {
   box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.25);
 }
 
+.pdfs {
+  gap: 2.4rem;
+  margin-top: 9.6rem;
+}
+
+.pdfs h2 {
+  font-size: 3.6rem;
+}
+
+.pdfs-cont {
+  gap: 1.6rem;
+  width: 85%;
+  flex-wrap: wrap;
+}
+
 .features {
   margin-bottom: 3.2rem;
 }
@@ -191,6 +206,10 @@ FONT SIZE SYSTEM (px)
   .product-samples .products-container {
     grid-template-columns: 1fr !important;
   }
+
+  .pdfs-cont .btn {
+    width: calc((100% - 1.6rem) / 2);
+  }
 }
 
 @media (max-width: 550px) {
@@ -208,6 +227,14 @@ FONT SIZE SYSTEM (px)
 
   .features .logo-slide {
     width: var(--width) !important;
+  }
+
+  .pdfs-cont .btn {
+    width: 100%;
+  }
+
+  .pdfs-cont {
+    width: 90%;
   }
 }
 
