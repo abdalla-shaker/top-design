@@ -9,8 +9,8 @@ body {
 
   position: absolute;
   top: 0;
-  left: 50%;
-  translate: -50%;
+  /* left: 50%;
+  translate: -50%; */
   z-index: 1;
 }
 
@@ -311,10 +311,10 @@ body {
     top: 0;
     left: -110%;
   }
-
+  /* 
   nav:has(+ #nav-icon.open) {
     left: -2.6%;
-  }
+  } */
 
   .header-container .links a:link,
   .header-container .links a:visited {
