@@ -116,35 +116,47 @@ section.accessories {
 
 /* *********************** */
 
-.color-samples {
+.color-samples,
+.product-samples {
   max-width: 190rem;
   margin: 9.6rem auto 0;
 }
 
-.color-samples-header {
+.color-samples-header,
+.product-samples-header {
   font-size: 3.6rem;
   text-align: center;
   margin-bottom: 4.8rem;
 }
 
-.color-samples .colors-container {
+.color-samples .colors-container,
+.product-samples .products-container {
   gap: 6.4rem;
 }
 
-.color-samples-sub-title {
+.color-samples-sub-title,
+.product-samples-sub-title {
   font-size: 2.4rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.color-samples .colors.flued-grid {
+.color-samples .colors.flued-grid,
+.product-samples .products.flued-grid {
   grid-template-columns: repeat(auto-fit, minmax(100px, 200px));
   gap: 1.6rem;
 }
 
-.color-samples .colors img {
+.color-samples .colors.flued-grid a,
+.product-samples .products.flued-grid a {
+  cursor: zoom-in;
+}
+
+.color-samples .colors img,
+.product-samples .products img {
   width: 200px;
+  aspect-ratio: 2 / 2.4;
 }
 
 .right-side,
