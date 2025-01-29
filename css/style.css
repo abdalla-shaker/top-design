@@ -283,6 +283,7 @@ FONT SIZE SYSTEM (px)
   transition: all 0.4s;
   height: 100%;
   max-height: 283px;
+  cursor: zoom-in;
 }
 
 .gallery-item img:hover {
