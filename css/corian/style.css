@@ -378,6 +378,18 @@ body {
   .hero {
     padding: 4.8rem;
   }
+
+  .header .container {
+    margin-left: 0;
+  }
+
+  .logo-cont img {
+    height: 6rem;
+  }
+
+  .hero h1 {
+    font-size: 4.4rem;
+  }
 }
 
 @media (max-width: 370px) {
@@ -385,8 +397,8 @@ body {
     width: 100%;
   }
 
-  .logo-cont img {
-    height: 6rem;
+  .hero h1 {
+    font-size: 3.6rem;
   }
 }
 
