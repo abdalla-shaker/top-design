@@ -284,6 +284,10 @@ body {
   .about-corian .fifth {
     grid-row: 10;
   }
+
+  .hero h1 {
+    text-align: center;
+  }
 }
 
 @media (max-width: 65em) {
@@ -351,6 +355,38 @@ body {
   .social-media-links {
     justify-content: center;
     margin-top: 2.4rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .features--list {
+    grid-template-columns: 1fr;
+  }
+
+  .about-corian {
+    padding: 1.6rem;
+  }
+
+  .about-corian img {
+    width: 100%;
+  }
+
+  .features img {
+    width: 100%;
+  }
+
+  .hero {
+    padding: 4.8rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .line {
+    width: 100%;
+  }
+
+  .logo-cont img {
+    height: 6rem;
   }
 }
 
