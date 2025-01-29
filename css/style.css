@@ -472,3 +472,17 @@ FONT SIZE SYSTEM (px)
     gap: 1.2rem;
   }
 }
+
+@media (max-width: 370px) {
+  .logo-cont img {
+    height: 6rem;
+  }
+
+  .products {
+    padding: 0.8rem;
+  }
+
+  .products__split--screen {
+    grid-template-columns: 1fr;
+  }
+}
