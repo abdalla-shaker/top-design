@@ -7,21 +7,24 @@
   object-fit: cover;
 }
 
-.availability {
-  max-width: 122rem;
+.products-gallery {
+  max-width: 130rem;
   margin: 9.6rem auto 0;
 }
 
-.availability-header {
+.product-gallery--header {
   font-size: 2rem;
   color: var(--button-color);
-  width: 50%;
+  max-width: 55rem;
+  margin-bottom: 1.6rem;
 }
 
-/* !Responsive */
+.gallery {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 300px));
+  justify-content: center;
+}
 
-/* @media (max-width: 370px) {
-  .logo-cont img {
-    height: 6rem;
-  }
-} */
+.gallery img {
+  width: 100%;
+  display: block;
+}
